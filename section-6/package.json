@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "grunt",
-    "update": "david update"
+    "update": "david update",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^1.x.x",
@@ -32,7 +34,8 @@
     "passport-tumblr": "^0.1.x",
     "passport-twitter": "^1.x.x",
     "serve-static": "^1.9.x",
-    "underscore": "^1.x.x"
+    "underscore": "^1.x.x",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "bootstrap": "^3.x.x",
@@ -54,5 +57,6 @@
     "jquery.cookie": "^1.x.x",
     "moment": "^2.x.x",
     "respond.js": "^1.x.x"
-  }
+  },
+  "snyk": true
 }
